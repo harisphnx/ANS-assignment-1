@@ -26,10 +26,6 @@ int main()
     struct in_addr in;
      
     unsigned char *buffer = (unsigned char *)malloc(65536); 
-     
-    //logfile=fopen("log.txt","w");
-    //if(logfile==NULL) printf("File not created.");
-    //printf("Wait\n");
     
     sock_raw = socket(AF_INET , SOCK_RAW , IPPROTO_TCP);
     if(sock_raw < 0)
